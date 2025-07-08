@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Exercise Tracker</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🏋️ Exercise Tracker</h1>
+      <p>
+        This is a microservice that allows users to register, log exercises, and view workout history.
+      </p>
+
+      <h2>🚀 API Endpoints</h2>
+      <ul>
+        <li>
+          <strong>POST</strong> <code>/api/users</code>
+          <br />
+          <small>Create a new user by sending a <code>username</code> in the body.</small>
+        </li>
+
+        <li>
+          <strong>GET</strong> <code>/api/users</code>
+          <br />
+          <small>Retrieve all users.</small>
+        </li>
+
+        <li>
+          <strong>POST</strong> <code>/api/users/:_id/exercises</code>
+          <br />
+          <small>Log an exercise for a user. Required: <code>description</code> and <code>duration</code>. Optional: <code>date</code>.</small>
+        </li>
+
+        <li>
+          <strong>GET</strong> <code>/api/users/:_id/logs</code>
+          <br />
+          <small>Get a user's exercise log. Supports optional query parameters <code>from</code>, <code>to</code>, and <code>limit</code>.</small>
+        </li>
+      </ul>
+
+      <footer>
+        <p>Made for <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
